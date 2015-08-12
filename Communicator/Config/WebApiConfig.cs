@@ -16,6 +16,8 @@ namespace Communicator.Config
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+            config.Filters.Add(new CustomAuthorizeAttribute());
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
