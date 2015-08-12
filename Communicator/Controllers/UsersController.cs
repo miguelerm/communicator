@@ -14,17 +14,17 @@ namespace Communicator.Controllers
     [RoutePrefix("api/users")]
     public class UsersController : ApiController
     {
-        private readonly UserService svc;
+        private readonly UserService users;
 
-        public UsersController()
+        public UsersController(UserService userService)
         {
-            svc = new UserService();
+            users = userService;
         }
 
         [Route("me")]
         public IHttpActionResult GetCurrentUser()
         {
-            var current = svc.GetCurrent();
+            var current = users.GetCurrent();
             return Ok(current);
         }
     }

@@ -1,13 +1,11 @@
 ﻿using Communicator.Services;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
-using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using System.Web;
 using System.Web.Http;
 using System.Web.Http.Controllers;
+using System.Net.Http;
 
 namespace Communicator.Filters
 {
@@ -19,8 +17,8 @@ namespace Communicator.Filters
 
             try
             {
-                var svc = new UserService();
-                await svc.CreateCurrentUserIfNotExistsAsync();
+                var users = GetUserService(actionContext);
+                await users.CreateCurrentUserIfNotExistsAsync();
             }
             catch (Exception ex)
             {
@@ -29,5 +27,12 @@ namespace Communicator.Filters
             }
             
         }
+
+        private UserService GetUserService(HttpActionContext actionContext)
+        {
+            var requestScope = actionContext.Request.GetDependencyScope();
+            return requestScope.GetService(typeof(UserService)) as UserService;
+        }
+
     }
 }
