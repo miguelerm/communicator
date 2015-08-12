@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Communicator.Filters;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -15,13 +16,15 @@ namespace Communicator.Config
             // Web API routes
             config.MapHttpAttributeRoutes();
 
-            config.Filters.Add(new AuthorizeAttribute());
+            config.Filters.Add(new CustomAuthorizeAttribute());
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            config.Formatters.XmlFormatter.UseXmlSerializer = true;
         }
     }
 }
