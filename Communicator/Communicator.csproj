@@ -84,7 +84,41 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="apple-touch-icon.png" />
+    <Content Include="browserconfig.xml" />
+    <Content Include="crossdomain.xml" />
+    <Content Include="css\angular-csp.css" />
+    <Content Include="css\angular-material.css" />
+    <Content Include="css\angular-material.min.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\main.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="humans.txt" />
+    <Content Include="index.html" />
+    <Content Include="js\vendor\angular-ui-router.js" />
+    <Content Include="js\vendor\angular-ui-router.min.js" />
+    <Content Include="js\app\main.js" />
+    <Content Include="js\vendor\angular-animate.js" />
+    <Content Include="js\vendor\angular-animate.min.js" />
+    <Content Include="js\vendor\angular-aria.js" />
+    <Content Include="js\vendor\angular-aria.min.js" />
+    <Content Include="js\vendor\angular-material.js" />
+    <Content Include="js\vendor\angular-material.min.js" />
+    <Content Include="js\vendor\angular.js" />
+    <Content Include="js\vendor\angular.min.js" />
+    <Content Include="js\vendor\jquery-1.11.2.min.js" />
+    <Content Include="js\vendor\modernizr-2.8.3.min.js" />
     <Content Include="packages.config" />
+    <Content Include="js\vendor\angular-animate.min.js.map" />
+    <Content Include="js\vendor\angular-aria.min.js.map" />
+    <Content Include="js\vendor\angular.min.js.map" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -94,6 +128,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="robots.txt" />
+    <None Include="Scripts\_references.js" />
+    <Content Include="tile-wide.png" />
+    <Content Include="tile.png" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

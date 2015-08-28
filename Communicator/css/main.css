@@ -1,0 +1,22 @@
+.browserupgrade{
+    z-index: 10000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: yellow;
+    color: red;
+    margin: 0;
+    padding: 0;
+}
+
+.move-up {
+  position: relative;
+  top: -60px;
+  z-index: 99;
+}
+
+md-icon.fa {
+    font-size: 1.8em
+}
