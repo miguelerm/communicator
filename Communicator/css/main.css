@@ -1,4 +1,4 @@
-.browserupgrade{
+.browserupgrade {
     z-index: 10000;
     position: absolute;
     top: 0;
@@ -12,11 +12,31 @@
 }
 
 .move-up {
-  position: relative;
-  top: -60px;
-  z-index: 99;
+    position: relative;
+    top: -60px;
+    z-index: 99;
 }
 
 md-icon.fa {
-    font-size: 1.8em
+    font-size: 1.8em;
+}
+
+.face {
+    border-radius: 30px;
+    width: 50px;
+    margin: 14px;
+}
+
+md-list-item.md-no-proxy.md-2-line {
+    padding: 0;
+}
+
+    md-list-item.md-no-proxy.md-2-line md-divider[md-inset] {
+        left: 80px;
+        width: calc(100% - 80px);
+        margin: 0;
+    }
+
+[md-component-id=conversaciones] > .md-toolbar-tools {
+    padding-left: 0;
 }
