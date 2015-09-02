@@ -40,3 +40,7 @@ md-list-item.md-no-proxy.md-2-line {
 [md-component-id=conversaciones] > .md-toolbar-tools {
     padding-left: 0;
 }
+
+body {
+    background-color: #e0e0e0;
+}
