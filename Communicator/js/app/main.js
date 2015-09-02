@@ -1,6 +1,12 @@
 ﻿(function () {
 
-    angular.module('communicator', ['ngMaterial']).controller('DemoController', DemoController);
+    angular.module('communicator', ['ngMaterial']).config(configuration).controller('DemoController', DemoController);
+
+    function configuration($mdThemingProvider) {
+
+        $mdThemingProvider.theme('default')
+            .primaryPalette('blue-grey');
+    }
 
 
     function DemoController($scope, $mdSidenav) {
